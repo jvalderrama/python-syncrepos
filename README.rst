@@ -2,10 +2,10 @@ Important Installation for development purpose (Temporal)
 ---------------------------------------------------------
 Stackops python-automationclient is under development taking as groundwork the project
 Openstack python-cinderclient, therefore to recreate the current project you need to clone this one
-throught the command ``git clone https://github.com/StackOps/python-automationclient`` and then follow the
+throught the command ``https://github.com/jvalderrama/python-syncrepos.git`` and then follow the
 next steps:
 
-1. Go to the directory ``python-automationclient``
+1. Go to the directory ``python-syncrepos``
 2. Once on the directory run the command ``python tools/install_venv.py`` to create a virtual environment
    to work on it
 3. Activate the virtual environment with the command ``source .venv/bin/activate``

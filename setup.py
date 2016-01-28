@@ -32,7 +32,7 @@
 import os
 import setuptools
 
-from reposynch.openstack.common import setup
+from reposynch import setup
 
 requires = setup.parse_requirements()
 depend_links = setup.parse_dependency_links()
@@ -46,13 +46,14 @@ def read_file(file_name):
 setuptools.setup(
     name=project,
     # version=setup.get_version(project),
-    version="1.2.1",
-    author="StackOps Contributors",
-    author_email="developers@stackops.org",
-    description="Client library for StackOps Automation API.",
+    version="1.0",
+    author="Jorge Valderrama Romero",
+    author_email="jorge.valderrama@atos.net",
+    description="RepoSynch is a lightweight API to synchronize images from Docker Hub in OpenStack and OpenNebula "
+                "Platforms",
     long_description=read_file("README.rst"),
     license="Apache License, Version 2.0",
-    url="https://github.com/StackOps/python-reposynch",
+    url="https://github.com/jvalderrama/python-syncrepos",
     packages=setuptools.find_packages(exclude=['tests', 'tests.*']),
     cmdclass=setup.get_cmdclass(),
     install_requires=requires,
@@ -61,13 +62,18 @@ setuptools.setup(
     include_package_data=True,
     dependency_links=depend_links,
     classifiers=[
-        "Development Status :: 5 - Production/Stable",
+        "Development Status :: 1 - Planning",
         "Environment :: Console",
         "Intended Audience :: Developers",
         "Intended Audience :: Information Technology",
+        "Intended Audience :: System Administrators",
         "License :: OSI Approved :: Apache Software License",
-        "Operating System :: OS Independent",
-        "Programming Language :: Python"
+        "Natural Language :: English",
+        "Operating System :: POSIX :: Linux",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 2",
+        "Programming Language :: Python :: 2.7",
+        "Topic :: System"
     ],
     entry_points={
         "console_scripts": ["automation = reposynch.api:main"]

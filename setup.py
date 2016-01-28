@@ -32,12 +32,12 @@
 import os
 import setuptools
 
-from automationclient.openstack.common import setup
+from reposynch.openstack.common import setup
 
 requires = setup.parse_requirements()
 depend_links = setup.parse_dependency_links()
 tests_require = setup.parse_requirements(['test-requirements.txt'])
-project = 'python-automationclient'
+project = 'python-reposynch'
 
 
 def read_file(file_name):
@@ -52,7 +52,7 @@ setuptools.setup(
     description="Client library for StackOps Automation API.",
     long_description=read_file("README.rst"),
     license="Apache License, Version 2.0",
-    url="https://github.com/StackOps/python-automationclient",
+    url="https://github.com/StackOps/python-reposynch",
     packages=setuptools.find_packages(exclude=['tests', 'tests.*']),
     cmdclass=setup.get_cmdclass(),
     install_requires=requires,
@@ -70,6 +70,6 @@ setuptools.setup(
         "Programming Language :: Python"
     ],
     entry_points={
-        "console_scripts": ["automation = automationclient.shell:main"]
+        "console_scripts": ["automation = reposynch.api:main"]
     }
 )

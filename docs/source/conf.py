@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# python-automationclient documentation build configuration file, created by
+# python-reposynch documentation build configuration file, created by
 # sphinx-quickstart on Mon Oct 21 13:27:52 2013.
 #
 # This file is execfile()d with the current directory set to its containing
@@ -56,7 +56,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'python-automationclient'
+project = u'python-reposynch'
 copyright = u'2013, Stackops S.L.'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -202,8 +202,8 @@ latex_elements = {
 # (source start file, target name, title, author, documentclass
 # [howto/manual]).
 latex_documents = [
-    ('index', 'python-automationclient.tex',
-     u'python-automationclient Documentation',
+    ('index', 'python-reposynch.tex',
+     u'python-reposynch Documentation',
      u'Stackops S.L.', 'manual'),
 ]
 
@@ -233,8 +233,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'python-automationclient',
-     u'python-automationclient Documentation',
+    ('index', 'python-reposynch',
+     u'python-reposynch Documentation',
      [u'Stackops S.L.'], 1)
 ]
 
@@ -248,10 +248,10 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    ('index', 'python-automationclient',
-     u'python-automationclient Documentation',
+    ('index', 'python-reposynch',
+     u'python-reposynch Documentation',
      u'Stackops S.L.',
-     'python-automationclient',
+     'python-reposynch',
      'One line description of project.',
      'Miscellaneous'),
 ]

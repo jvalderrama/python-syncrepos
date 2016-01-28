@@ -4,3 +4,4 @@ requests>=1.1
 simplejson>=2.0.9
 Babel>=0.9.6
 six
+bottle

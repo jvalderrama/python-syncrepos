@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+
+# Copyright 2016, Atos Spain SA.                                             #
 # Copyright (c) 2013 Hewlett-Packard Development Company, L.P.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -74,8 +76,5 @@ setuptools.setup(
         "Programming Language :: Python :: 2",
         "Programming Language :: Python :: 2.7",
         "Topic :: System"
-    ],
-    entry_points={
-        "console_scripts": ["automation = reposynch.api:main"]
-    }
+    ]
 )

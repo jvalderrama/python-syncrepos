@@ -10,4 +10,6 @@ next steps:
    to work on it
 3. Activate the virtual environment with the command ``source .venv/bin/activate``
 4. Install the python-automationclient throught the command ``python setup.py install``
-5. This is all!! Start to contribute....
+5. Go to a browser and type: http://localhost:8080/hello/INDIGO
+
+That's all!! Start to contribute to the API....
